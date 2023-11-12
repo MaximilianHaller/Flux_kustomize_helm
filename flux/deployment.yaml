@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-flux
+  name: nginx-flux-toplevel
   namespace: default
 spec:
   selector:
