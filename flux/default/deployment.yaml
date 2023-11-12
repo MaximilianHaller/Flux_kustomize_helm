@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-flux
+  name: nginx-test
 spec:
   selector:
     matchLabels:
-      app: nginx-flux
+      app: nginx-test
   template:
     metadata:
       labels:
-        app: nginx-flux
+        app: nginx-test
     spec:
       containers:
-      - name: nginx-image
+      - name: nginx-test
         image: nginx
         resources:
           limits:
