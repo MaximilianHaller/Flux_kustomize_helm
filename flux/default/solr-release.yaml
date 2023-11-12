@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: solr
-  namespace: default
+  namespace: flux-system
 spec:
   interval: 1m
   chart:
@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: solr
-        namespace: default
+        namespace: system
       interval: 1m
   values:
     replicaCount: 1
