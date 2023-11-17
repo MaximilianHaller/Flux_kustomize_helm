@@ -11,10 +11,10 @@ spec:
   template:
     metadata:
       labels:
-        app: ginx-deployment
+        app: nginx-deployment
     spec:
       containers:
-      - name: ginx-deployment
+      - name: nginx-deployment
         image: nginx:1.14.2
         ports:
         - containerPort: 80
