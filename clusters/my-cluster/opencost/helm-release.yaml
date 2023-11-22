@@ -7,7 +7,8 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: charts/opencost
+      chart: opencost/opencost
+      version: '1.26.2'
       sourceRef:
         kind: HelmRepository
         name: opencost
