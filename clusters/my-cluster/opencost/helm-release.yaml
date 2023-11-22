@@ -7,7 +7,7 @@ spec:
   interval: 5m
   chart:
     spec:
-      chart: opencost
+      chart: charts/opencost
       sourceRef:
         kind: HelmRepository
         name: opencost
